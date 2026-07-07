@@ -16,149 +16,189 @@
 
 
 
-Basic Git & GitHub Interview Questions
+
+
+
+Basic Git & GitHub Interview Questions from Chatgpt : 
+
 1. What is Git?
 
-Answer:
-Git is a distributed version control system used to track changes in source code and collaborate with other developers.
+Answer: Git is a distributed version control system used to track changes in source code and collaborate with other developers.
+
 
 2. What is GitHub?
 
-Answer:
-GitHub is a cloud-based platform that hosts Git repositories and provides collaboration features like pull requests, issues, and project management.
+Answer: GitHub is a cloud-based platform that hosts Git repositories and provides collaboration features like pull requests, issues, and project management.
+
 
 3. What is the difference between Git and GitHub?
-Git	GitHub
-Version control system	Hosting platform
-Works locally	Works online
-Tracks code changes	Stores repositories remotely
+
+Git                     Vs	    GitHub
+Version control system  --- 	Hosting platform
+Works locally           ---    	Works online
+Tracks code changes     --- 	Stores repositories remotely
+
+
 4. What is a repository?
 
-Answer:
-A repository (repo) is a storage location that contains project files, code, and version history.
+Answer: A repository (repo) is a storage location that contains project files, code, and version history.
+
 
 5. What is a commit?
 
-Answer:
-A commit is a snapshot of the project at a specific point in time.
+Answer: A commit is a snapshot of the project at a specific point in time.
 
-Example:
+Example: git commit -m "Added login page"
 
-git commit -m "Added login page"
+
 6. What is the staging area?
 
-Answer:
-The staging area is where changes are prepared before creating a commit.
+Answer: The staging area is where changes are prepared before creating a commit.
 
 git add .
+
+
 7. Which command initializes a Git repository?
+
 git init
+
+
 8. Which command checks the current repository status?
 git status
+
+
 9. Which command stages files for commit?
 git add .
 
 or
 
 git add filename
+
+
 10. Which command creates a commit?
+
 git commit -m "message"
+
+
 11. Which command shows commit history?
+
 git log
+
+
 12. What is a branch?
 
-Answer:
-A branch is an independent line of development that allows developers to work on features without affecting the main codebase.
+Answer: A branch is an independent line of development that allows developers to work on features without affecting the main codebase.
+
 
 13. Which command creates a new branch?
+
 git branch feature
+
+
 14. Which command switches branches?
+
 git checkout feature
 
 or
 
 git switch feature
+
+
 15. What is the default branch usually called?
 
-Commonly:
+Commonly: main
 
-main
+Previously: master
 
-Previously:
 
-master
 16. Which command displays all branches?
+
 git branch
+
+
 17. What is a remote repository?
 
-Answer:
-A remote repository is a repository hosted on a server such as GitHub.
+Answer: A remote repository is a repository hosted on a server such as GitHub.
+
 
 18. Which command connects a local repo to GitHub?
+
 git remote add origin REPOSITORY_URL
+
+
 19. Which command uploads code to GitHub?
+
 git push
 
-Example:
+Example: git push -u origin main
 
-git push -u origin main
+
 20. Which command downloads code from GitHub?
+
 git pull
+
+
 21. What is the difference between git fetch and git pull?
 
-git fetch
+git fetch :
 
 Downloads changes
 Doesn't merge automatically
 
-git pull
+git pull :
 
 Downloads changes
 Merges automatically
+
+
 22. Which command clones a repository?
+
 git clone REPOSITORY_URL
+
+
 23. What is a merge?
 
-Answer:
-Merge combines changes from one branch into another branch.
+Answer: Merge combines changes from one branch into another branch.
 
-24. What is a merge conflict?
 
-Answer:
-A merge conflict occurs when Git cannot automatically determine which changes should be kept.
+24. What is a merge conflict? 
+
+Answer: A merge conflict occurs when Git cannot automatically determine which changes should be kept.
+
 
 25. What is a Pull Request (PR)?
 
-Answer:
-A Pull Request is a request to merge changes from one branch into another branch on GitHub.
+Answer: A Pull Request is a request to merge changes from one branch into another branch on GitHub.
+
 
 26. Why should developers commit frequently?
 
-Answer:
+Answer:     Easier tracking
+            Easier rollback
+            Better collaboration
+            Cleaner project history
 
-Easier tracking
-Easier rollback
-Better collaboration
-Cleaner project history
+
 27. What does this command do?
+
 git add .
 
-Answer:
-Stages all modified and new files in the current directory.
+Answer: Stages all modified and new files in the current directory.
+
 
 28. What does this command do?
+
 git push -u origin main
 
-Answer:
-Pushes the local main branch to the remote repository and sets it as the upstream branch.
+Answer: Pushes the local main branch to the remote repository and sets it as the upstream branch.
 
-29. What does HEAD mean in Git?
 
-Answer:
-HEAD is a pointer to the current commit and active branch.
+29. What does HEAD mean in Git? 
+
+Answer: HEAD is a pointer to the current commit and active branch.
+
 
 30. What is version control?
 
-Answer:
-Version control is a system that tracks changes in files over time, allowing developers to review, restore, and collaborate on code efficiently.
+Answer: Version control is a system that tracks changes in files over time, allowing developers to review, restore, and collaborate on code efficiently.
 
