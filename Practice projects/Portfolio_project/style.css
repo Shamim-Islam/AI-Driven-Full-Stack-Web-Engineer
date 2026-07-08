@@ -1,31 +1,98 @@
-
+/* reset styles */
 * {
   margin: 0;
   padding: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
   padding: 12px 0;
 }
 
 .logo {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 45px;
+}
+
+.logo-r {
+  color: #fd6e0a;
 }
 
 ul {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 30px;
   list-style: none;
+  align-items: center;
 }
 
 ul a {
   text-decoration: none;
+  font-size: 20px;
+}
+
+/* common styles */
+.common-btn {
+  background-color: #fd6e0a;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+}
+
+.common-btn:hover {
+  cursor: pointer;
+}
+
+.outline-btn {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #fd6e0a;
+  border: 2px solid #fd6e0a;
+  margin-left: 15px;
+}
+
+.outline-btn:hover {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+/* banner section */
+.hero {
+  background-color: #fff8f3;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-banner h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.left-banner h1 {
+  font-size: 85px;
+  margin-bottom: 30px;
+}
+.left-banner p {
+  font-size: 21px;
+  margin-bottom: 30px;
 }
