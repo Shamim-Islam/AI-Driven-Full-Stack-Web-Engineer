@@ -24,6 +24,9 @@ function isElevatorSafe(weights) {
   let totalWeight = 0;
 
   for (let weight of weights) {
+    if (typeof weight !== "number") {
+      return "Invalid";
+    }
     totalWeight += weight;
   }
 
