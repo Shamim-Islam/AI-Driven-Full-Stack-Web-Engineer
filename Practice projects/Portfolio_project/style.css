@@ -96,3 +96,38 @@ ul a {
   font-size: 21px;
   margin-bottom: 30px;
 }
+
+/* about me */
+.about-me-container {
+  background-color: #fff8f3;
+  border-radius: 10px;
+  margin: 130px auto;
+  padding: 130px 165px;
+}
+
+.about-me {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.about-me h1 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.about-me .txt {
+  margin: 30px auto;
+  font-size: 18px;
+  max-width: 90%;
+}
+
+.details-container {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.ans {
+  font-weight: bold;
+}
