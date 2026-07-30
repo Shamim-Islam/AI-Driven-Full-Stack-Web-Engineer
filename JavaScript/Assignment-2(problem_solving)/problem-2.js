@@ -1,3 +1,5 @@
+// Problem 2 — Elevator Weight Safety Checker
+
 function isElevatorSafe(weights) {
   if (!Array.isArray(weights)) {
     return "Invalid";
@@ -18,3 +20,4 @@ console.log(isElevatorSafe([60, 75, 50]));
 console.log(isElevatorSafe([90, 100, 95, 120]));
 console.log(isElevatorSafe([400]));
 console.log(isElevatorSafe("60,75,50"));
+console.log(isElevatorSafe([]));

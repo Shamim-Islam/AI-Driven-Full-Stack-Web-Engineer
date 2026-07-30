@@ -1,3 +1,5 @@
+// Problem 1 — Match Winner
+
 function matchWinner(teamAGoals, teamBGoals) {
   if (typeof teamAGoals !== "number" || typeof teamBGoals !== "number") {
     return "Invalid";
