@@ -1,4 +1,5 @@
 //Problem-01: Match Winner
+
 function matchWinner(teamAGoals, teamBGoals) {
   if (typeof teamAGoals !== "number" || typeof teamBGoals !== "number") {
     return "Invalid";
@@ -14,6 +15,7 @@ function matchWinner(teamAGoals, teamBGoals) {
 }
 
 //Problem-02: Elevator Weight Safety Checker
+
 function isElevatorSafe(weights) {
   if (!Array.isArray(weights)) {
     return "Invalid";
@@ -50,6 +52,7 @@ function calculateAiCost(tokensUsed) {
 }
 
 //Problem-04: Top Rated Restaurant Finder
+
 function topRatedRestaurant(restaurants) {
   if (!Array.isArray(restaurants) || restaurants.length === 0) {
     return "Invalid";
