@@ -11,8 +11,8 @@ export default function Countries({ countriesPromise }: CountriesProps) {
   const countries = use(countriesPromise);
   const [visitedCountries, setVisitedCountries] = useState<CountryType[]>([]);
 
-  const handleVisitedCountry = () => {
-    
+  const handleVisitedCountry = (country : CountryType) => {
+    const newVisitedCountries = [...visitedCountries, country]
   }
 
   return (
