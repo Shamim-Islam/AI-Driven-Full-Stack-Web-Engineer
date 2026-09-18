@@ -1,11 +1,20 @@
+'use client'
 import React from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname();
+
+  console.log('pathname in navbar', pathname);
+  
   const links = (
     <>
       <li>
         <Link href="/docs">Docs</Link>
+      </li>
+      <li>
+        <Link href="/about">About</Link>
       </li>
       <li>
         <Link href="/showcase">Showcase</Link>
@@ -24,7 +33,7 @@ const Navbar = () => {
       <li>
         <Link href="/dashboard">Dashboard</Link>
       </li>
-      
+
       <li>
         <Link href="/users">Users</Link>
       </li>

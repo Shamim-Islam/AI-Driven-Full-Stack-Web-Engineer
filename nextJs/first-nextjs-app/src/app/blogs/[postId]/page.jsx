@@ -61,7 +61,6 @@ const blogsData = [
 const PostDetailPage = async ({ params }) => {
   const { postId } = await params;
   const post = blogsData.find((post) => post.id === parseInt(postId));
-  console.log(post, typeof postId);
 
   return (
     <div>

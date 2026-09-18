@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const UserCard = ({ user }) => {
@@ -5,9 +7,16 @@ const UserCard = ({ user }) => {
     <div className="flex min-h-screen items-center justify-center p-4">
       <div className="w-full max-w-sm rounded-2xl bg-white p-6 text-center shadow-lg">
         {/* Profile Image */}
-        <img
+        {/* <img
           src="https://i.pravatar.cc/150?img=12"
           alt="User"
+          className="mx-auto h-24 w-24 rounded-full object-cover ring-4 ring-blue-100"
+        /> */}
+        <Image
+          src="https://i.pravatar.cc/150"
+          alt="User"
+          width={96}
+          height={96}
           className="mx-auto h-24 w-24 rounded-full object-cover ring-4 ring-blue-100"
         />
 
@@ -39,9 +48,11 @@ const UserCard = ({ user }) => {
         </div>
 
         {/* Button */}
-        <button className="mt-6 w-full rounded-lg bg-blue-600 py-3 font-semibold text-white transition hover:bg-blue-700">
-          View Profile
-        </button>
+        <Link href={`/users/${user.id}`}>
+          <button className="mt-6 w-full rounded-lg bg-blue-600 py-3 font-semibold text-white transition hover:bg-blue-700">
+            View Profile
+          </button>
+        </Link>
       </div>
     </div>
   );
