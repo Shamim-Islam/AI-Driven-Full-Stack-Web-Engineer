@@ -9,21 +9,21 @@ import PostCard from "../components/PostCard";
 
 // option 2
 const getPosts = async () => {
-    const res = await fetch("https://jsonplaceholder.typicode.com/posts"); 
-    if(!res.ok) {
-        throw new Error("Failed to fetch data");
-    }
-    return res.json();
-}
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
+  return res.json();
+};
 
 // option 3:
 const getPosts2 = async () => {
- try {
-     const res = await fetch("https://jsonplaceholder.typicode.com/posts");
-  return res.json();
- } catch {
+  try {
+    const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+    return res.json();
+  } catch {
     throw new Error("Failed to fetch data");
- }
+  }
 };
 
 const PostPage = async () => {
@@ -38,7 +38,7 @@ const PostPage = async () => {
 
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Post s: {data.length}</h1>
+      <h1 className="text-3xl font-bold underline">Posts: {data.length}</h1>
 
       <div className="grid grid-cols-3 gap-4">
         {data.map((post) => (

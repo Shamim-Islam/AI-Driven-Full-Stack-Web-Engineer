@@ -13,6 +13,9 @@ const Navbar = () => {
       <li>
         <Link href="/posts">Posts</Link>
       </li>
+      <li>
+        <Link href="/products">Products</Link>
+      </li>
     </>
   );
   return (
@@ -40,7 +43,9 @@ const Navbar = () => {
           <ul
             tabIndex={-1}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
-          >{links}</ul>
+          >
+            {links}
+          </ul>
         </div>
         <Link href="/" className="btn btn-ghost text-xl">
           daisyUI

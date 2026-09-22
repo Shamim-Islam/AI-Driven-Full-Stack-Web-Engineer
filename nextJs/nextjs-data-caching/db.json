@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Wireless Headphones",
+      "price": 2499,
+      "category": "Electronics",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+      "description": "Enjoy clear and powerful sound with these comfortable wireless headphones. They feature a long-lasting battery, soft ear cushions, and a lightweight design that makes them perfect for music, gaming, and everyday use.",
+      "stock": 15,
+      "rating": 4.5
+    },
+    {
+      "id": "2",
+      "name": "Mechanical Keyboard",
+      "price": 3499,
+      "category": "Electronics",
+      "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3",
+      "description": "A durable mechanical keyboard designed for both gamers and developers. It offers responsive keys, comfortable typing, RGB lighting, and a satisfying mechanical feel for long working sessions.",
+      "stock": 10,
+      "rating": 4.7
+    },
+    {
+      "id": "3",
+      "name": "Smart Watch",
+      "price": 4299,
+      "category": "Wearables",
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+      "description": "Stay connected and track your daily activities with this stylish smartwatch. It includes fitness tracking, heart-rate monitoring, notifications, and multiple useful features for an active lifestyle.",
+      "stock": 8,
+      "rating": 4.4
+    },
+    {
+      "id": "4",
+      "name": "Running Shoes",
+      "price": 2899,
+      "category": "Fashion",
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+      "description": "Lightweight running shoes designed to provide excellent comfort and support during workouts and daily activities. The breathable design and cushioned sole make them ideal for walking, running, and exercise.",
+      "stock": 20,
+      "rating": 4.6
+    },
+    {
+      "id": "5",
+      "name": "Laptop Backpack",
+      "price": 1599,
+      "category": "Accessories",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
+      "description": "A spacious and durable laptop backpack with multiple compartments for organizing your laptop, books, accessories, and personal belongings. Perfect for students, developers, and office professionals.",
+      "stock": 25,
+      "rating": 4.3
+    },
+    {
+      "id": "6",
+      "name": "Coffee Mug",
+      "price": 599,
+      "category": "Home",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+      "description": "A stylish ceramic coffee mug with a simple and modern design. It is perfect for enjoying coffee, tea, or other hot beverages at home, in the office, or while working at your desk.",
+      "stock": 30,
+      "rating": 4.2
+    }
+  ]
+}
