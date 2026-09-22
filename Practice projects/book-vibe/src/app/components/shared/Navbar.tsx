@@ -8,8 +8,8 @@ const Navbar = () => {
     <li><Link href="/contact">Pages to Read</Link></li>
     </>
   return (
-    <div>
-      <div className="navbar bg-base-100 shadow-sm">
+    <div className="container mx-auto">
+      <div className="navbar bg-base-100 ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -37,15 +37,16 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="btn btn-ghost text-xl">Book Vibe</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             {links}
           </ul>
         </div>
-        <div className="navbar-end">
-          <a className="btn">Button</a>
+        <div className="navbar-end grid grid-flow-col gap-4">
+          <button className="btn btn-success">Sign In</button>
+          <button className="btn btn-info">Sign Up</button>
         </div>
       </div>
     </div>
