@@ -1,9 +1,12 @@
+import Banner from "./components/homepage/Banner";
+import Books from "./components/homepage/Books";
 
 
 export default function Home() {
   return (
     <div>
-      <h2>Homepage</h2>
+      <Banner/>
+      <Books/>
     </div>
   );
 }
