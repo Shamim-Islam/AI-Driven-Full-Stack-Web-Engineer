@@ -11,7 +11,7 @@ const Banner = () => {
             Discover Your Next Read
           </p>
 
-          <h1 className="mb-6 text-4xl font-extrabold leading-tight text-slate-900 md:text-5xl lg:text-6xl">
+          <h1 className="mb-6 text-3xl font-extrabold leading-tight text-slate-900 md:text-4xl lg:text-5xl">
             Books to Freshen Up
             <br />
             <span className="text-green-600">Your Bookshelf</span>

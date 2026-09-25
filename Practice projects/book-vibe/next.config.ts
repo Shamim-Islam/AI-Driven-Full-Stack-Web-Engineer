@@ -15,6 +15,8 @@ const nextConfig = {
         hostname: "covers.openlibrary.org",
       },
     ],
+
+    dangerouslyAllowLocalIP: true,
   },
 };
 
