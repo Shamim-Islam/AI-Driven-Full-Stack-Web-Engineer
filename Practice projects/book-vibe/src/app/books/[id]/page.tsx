@@ -1,12 +1,12 @@
 import { IBook } from "@/types/books.type";
 import Image from "next/image";
 import React from "react";
-import { Star } from 'lucide-react';
-import { Calendar } from 'lucide-react';
-import { FileText } from 'lucide-react';
-import { BookOpen } from 'lucide-react';
-import { Heart } from 'lucide-react';
-
+import { Star } from "lucide-react";
+import { Calendar } from "lucide-react";
+import { FileText } from "lucide-react";
+import { BookOpen } from "lucide-react";
+import ReadButton from "@/app/components/bookDetails/ReadButton";
+import WishListButton from "@/app/components/bookDetails/WishListButton";
 interface IBookDetailsPageProps {
   params: Promise<{
     id: string;
@@ -42,7 +42,6 @@ const BookDetailsPage = async ({ params }: IBookDetailsPageProps) => {
         {/* Main Card */}
         <div className="overflow-hidden rounded-3xl bg-base-100 shadow-xl">
           <div className="grid grid-cols-1 gap-10 p-6 md:p-10 lg:grid-cols-[380px_1fr]">
-            
             {/* ================= IMAGE ================= */}
             <div className="flex items-center justify-center">
               <div className="relative w-full max-w-[320px] overflow-hidden rounded-2xl shadow-2xl">
@@ -59,7 +58,6 @@ const BookDetailsPage = async ({ params }: IBookDetailsPageProps) => {
 
             {/* ================= BOOK INFO ================= */}
             <div className="flex flex-col">
-              
               {/* Category */}
               <div className="mb-4">
                 <span className="rounded-full bg-success/10 px-4 py-2 text-sm font-semibold text-success">
@@ -96,9 +94,7 @@ const BookDetailsPage = async ({ params }: IBookDetailsPageProps) => {
 
               {/* Description */}
               <div className="mt-8">
-                <h2 className="mb-3 text-xl font-bold">
-                  About this book
-                </h2>
+                <h2 className="mb-3 text-xl font-bold">About this book</h2>
 
                 <p className="text-base leading-7 text-base-content/70">
                   {book.review}
@@ -107,49 +103,30 @@ const BookDetailsPage = async ({ params }: IBookDetailsPageProps) => {
 
               {/* Metadata */}
               <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3">
-                
                 <div className="rounded-xl bg-base-200 p-4">
                   <Calendar className="mb-2 h-5 w-5 text-success" />
-                  <p className="text-xs text-base-content/50">
-                    Published
-                  </p>
-                  <p className="mt-1 font-semibold">
-                    {book.yearOfPublishing}
-                  </p>
+                  <p className="text-xs text-base-content/50">Published</p>
+                  <p className="mt-1 font-semibold">{book.yearOfPublishing}</p>
                 </div>
 
                 <div className="rounded-xl bg-base-200 p-4">
                   <FileText className="mb-2 h-5 w-5 text-success" />
-                  <p className="text-xs text-base-content/50">
-                    Pages
-                  </p>
-                  <p className="mt-1 font-semibold">
-                    {book.totalPages}
-                  </p>
+                  <p className="text-xs text-base-content/50">Pages</p>
+                  <p className="mt-1 font-semibold">{book.totalPages}</p>
                 </div>
 
                 <div className="rounded-xl bg-base-200 p-4">
                   <BookOpen className="mb-2 h-5 w-5 text-success" />
-                  <p className="text-xs text-base-content/50">
-                    Format
-                  </p>
-                  <p className="mt-1 font-semibold">
-                    Hardcover
-                  </p>
+                  <p className="text-xs text-base-content/50">Format</p>
+                  <p className="mt-1 font-semibold">Hardcover</p>
                 </div>
               </div>
 
               {/* ================= BUTTONS ================= */}
               <div className="mt-auto flex flex-col gap-3 pt-10 sm:flex-row">
-                <button className="btn btn-success flex-1 gap-2 rounded-xl text-base font-semibold">
-                  <BookOpen className="h-5 w-5" />
-                  Read
-                </button>
+                <ReadButton book={book}></ReadButton>
 
-                <button className="btn btn-outline btn-success flex-1 gap-2 rounded-xl text-base font-semibold">
-                  <Heart className="h-5 w-5" />
-                  Wishlist
-                </button>
+                <WishListButton book={book}></WishListButton>
               </div>
             </div>
           </div>
