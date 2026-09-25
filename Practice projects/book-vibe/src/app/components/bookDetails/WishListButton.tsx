@@ -3,6 +3,7 @@ import { BooksContext } from "@/app/context/BooksProvider";
 import { IBook } from "@/types/books.type";
 import { BookOpen, Heart } from "lucide-react";
 import React, { useContext } from "react";
+import { toast } from "react-toastify";
 
 const WishListButton = ({ book }: { book: IBook }) => {
   const { wishList, setWishList } = useContext(BooksContext);
@@ -10,7 +11,7 @@ const WishListButton = ({ book }: { book: IBook }) => {
   const handleWishList = () => {
     console.log("read btn triggered", book);
     setWishList([...wishList, book]);
-    alert(`you have wishlist ${book.bookName}`);
+    toast.success(`you have wishlist ${book.bookName}`);
   };
 
   return (

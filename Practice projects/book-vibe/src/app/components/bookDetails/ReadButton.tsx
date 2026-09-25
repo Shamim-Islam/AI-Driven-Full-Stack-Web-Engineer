@@ -3,6 +3,7 @@ import { BooksContext } from "@/app/context/BooksProvider";
 import { IBook } from "@/types/books.type";
 import { BookOpen } from "lucide-react";
 import React, { useContext } from "react";
+import { toast } from "react-toastify";
 
 const ReadButton = ({ book }: { book: IBook }) => {
   const { readBooks, setReadBooks } = useContext(BooksContext);
@@ -10,7 +11,7 @@ const ReadButton = ({ book }: { book: IBook }) => {
   const handleReadBook = () => {
     console.log("read btn triggered", book);
     setReadBooks([...readBooks, book]);
-    alert(`you have read ${book.bookName}`);
+    toast.success(`you have read ${book.bookName}`);
   };
 
   return (
