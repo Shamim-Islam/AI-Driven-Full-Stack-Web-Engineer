@@ -19,7 +19,7 @@ const ListedBooks = () => {
           aria-label="Read Books"
         />
         <div className="tab-content bg-base-100 border-base-300 p-6">
-          {readBooks.map()}
+          {readBooks.map([])}
         </div>
 
         <input
