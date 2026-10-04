@@ -9,6 +9,7 @@ import {
   Label,
   TextField,
 } from "@heroui/react";
+import { Icon } from "@iconify/react";
 
 const SignInPage = () => {
   const onSubmit = async (e) => {
@@ -24,6 +25,20 @@ const SignInPage = () => {
       callbackURL: "/",
     });
     console.log(resData, error);
+  };
+
+  const handleGoogleSignIn = async () => {
+    const resData = await signIn.social({
+      provider: "google",
+    });
+    console.log(resData);
+  };
+
+  const handleGithubSignIn = async () => {
+    const resData = await signIn.social({
+      provider: "github",
+    });
+    console.log(resData);
   };
 
   return (
@@ -79,6 +94,24 @@ const SignInPage = () => {
             Reset
           </Button>
         </div>
+        <p>Or</p>
+        <Button
+          className="w-full"
+          variant="danger"
+          onClick={handleGoogleSignIn}
+        >
+          <Icon icon="devicon:google" />
+          Sign in with Google
+        </Button>
+        <p>Or</p>
+        <Button
+          className="w-full"
+          variant="outline"
+          onClick={handleGithubSignIn}
+        >
+          <Icon icon="mdi:github" />
+          Sign in with GitHub
+        </Button>
       </Form>
     </div>
   );
